@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <style>
             #home{
                 width: 100%;
                 margin: 0 auto;
+                position: relative;
             }
             header{
                 width: 100%;
@@ -34,9 +36,9 @@
             }
             .menu{
                 height: 100px;
-                width: 100%;
                 line-height: 100px;
                 font-weight: bolder;
+                margin-left: 400px;
             }
             .menu ul{
                 position: absolutel;
@@ -98,7 +100,7 @@
                 margin: 0 auto;
                 right: 18px;
             }
-            .border1 > p{margin: 0; padding: 0; margin-top: 6px;}
+            .border1 > p{margin: 0; padding: 0; margin-top: 8px;}
             .border2{
                 position: relative;
                 border-radius: 50px;
@@ -110,7 +112,7 @@
                 margin: 0 auto;
                 right: 18px;
             }
-            .border2 > p{margin: 0; padding: 0; margin-top: 6px;}
+            .border2 > p{margin: 0; padding: 0; margin-top: 8px;}
             .border1:hover{
                 color: black;
             }
@@ -119,6 +121,64 @@
             }
             ul li a:hover{
                 color: red;
+            }
+            .popup{
+                position: absolute;
+                top: 505px;
+                left: 100;
+                background-color: rgba(0,0,0,0.7);
+                width: 300px;
+                height: 225px;
+                color: white;
+                text-align: center;
+                line-height: 230px;
+                font-size: 2em;
+                z-index: 99;
+                display: none;
+            }
+            .popup2{
+                position: absolute;
+                top: 770px;
+                left: 100;
+                background-color: rgba(0,0,0,0.7);
+                width: 300px;
+                height: 225px;
+                color: white;
+                text-align: center;
+                line-height: 230px;
+                font-size: 2em;
+                z-index: 99;
+                display: none;
+            }
+            #box article:hover .popup{
+                display: block;
+            }
+            #box article:hover .popup2{
+                display: block;
+            }
+            #modal{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.7);
+                width: 100%;
+                height: 100%;
+                display: none;
+            }
+            #popup{
+                width: 40%;
+                height: 600px;
+                margin: 200px auto;
+                overflow: scroll;
+                overflow-x: hidden;
+                border: 1px solid black;
+                background-color: white;
+            }
+            #close{
+                position: fixed;
+                top: 22%;
+                right: 27%;
+                
             }
     </style>
 </head>
@@ -145,12 +205,20 @@
                     </ul>
                 </article>
                 <div id="box">
-                <article class="box1"><img src="2.jpg"></article>
-                <article class="box2"><img src="3.jpg"></article>
-                <article class="box3"><img src="4.jpg"></article>
-                <article class="box4"><img src="5.jpg"></article>
-                <article class="box5"><img src="6.jpg"></article>
-                <article class="box6"><img src="7.jpg"></article>
+                <article class="box1">
+                    <div class="popup">GUESS</div><img src="2.jpg"></article>
+                <article class="box2"><img src="3.jpg">
+                    <div class="popup">OUTBACK</div></article>
+                <article class="box3">
+                    <div class="popup">LOL</div><img src="4.jpg"></article>
+                <article class="box4">
+                    <div class="popup2">CAFE</div>
+                    <img src="5.jpg"></article>
+                <article class="box5">
+                    <div class="popup2">BING</div>
+                    <img src="6.jpg"></article>
+                <article class="box6">
+                    <div class="popup2">TRAVEL</div><img src="7.jpg"></article>
                 <article class="border1">
                     <p>홈페이지 바로가기</p></article>
                 <article class="border1">
@@ -170,8 +238,25 @@
                 </div>
                 </section>
             <footer>
-                <p>copyrightcopyrightⓒ2019CHOI HYEJI.All Rights ReservedV</p>
+                <p>copyrightcopyrightⓒ2019CHOI HYEJI.All Rights Reserved</p>
             </footer>
+            <div id="modal">
+                <div id="popup">
+                <img src="홈페이지21.jpg" alt="팝업" id="img01">
+                <img src="다운로드.png" alt="종료" id="close" width="50">
+            </div>
+            </div>
         </div>
+        <script>
+                $(function(){
+                $('#box').click (function(){
+                $('#modal').fadeIn();
+                });
+                $('#modal #close').click (function(){
+                $('#modal').fadeOut();
+                });
+                }
+                );
+        </script>
 </body>
 </html>

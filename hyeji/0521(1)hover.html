@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style>
+            #home{
+                width: 100%;
+                position: relative;
+            }
+            .menu{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.7);
+                width: 100%;
+                height: 100%;
+                color: white;
+                text-align: center;
+                z-index: 99;
+                display: none;
+            }
+            .list li:hover .menu{
+                display: block;
+            }
+            /*#home:after{
+                content: "";
+                display: block;
+                clear: boty;
+                }
+                */
+            #modal{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.7);
+                width: 100%;
+                height: 100%;
+            }
+            #popup{
+                width: 60%;
+                margin: 200px auto;
+                overflow: scroll;
+                overflow-x: hidden;
+                border: 1px solid black;
+                background-color: white;
+            }
+            img{
+                width: 100px;
+            }
+    </style>
+</head>
+<body>
+        <h1>신상품 목록</h1>
+        <div id="home">
+            <ul class="list">
+                <li>
+                    <img src="spade-2.png" alt="스페이드">
+        <div class="menu">
+            <p>상품설명</p>
+            <p>가격</p>
+        </div>
+    </li>
+        </ul>
+        </div>
+        <div id="modal">
+            <div id="popup">
+                <img src="spade-3.png" alt="팝업" id="img01">
+                <img src="spade-7.png" alt="종료" id="close">
+            </div>
+        </div>
+        <script>
+                $(function(){
+                $('#modal #close').click (function(){
+                $('#modal').fadeOut();
+                });
+                $('#img01').click (function(){
+                $('#modal').fadeIn();
+                });
+                }
+                );
+        </script>
+</body>
+</html>
