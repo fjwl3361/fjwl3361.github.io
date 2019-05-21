@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+            #home{
+                width: 100%;
+                margin: 0 auto;
+            }
+            header{
+                width: 100%;
+                height: 300px;
+                background-image: url('홈페이지33.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav{
+                height: 50px;
+                width: 80%;
+                margin: 0 auto;
+                font-weight: bolder;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0;
+                float: right;
+            }
+            nav img{
+                width: 80px;
+                position: absolute;
+                top: 20px;
+            }
+            .menu{
+                height: 100px;
+                width: 100%;
+                line-height: 100px;
+                font-weight: bolder;
+            }
+            .menu ul{
+                position: absolutel;
+                top: 50px;
+            }
+            .menu a{
+                text-decoration: none;
+                color: black;
+            }
+            .menu ul li{
+                display: inline-block;
+                margin: 5px;
+            }
+            nav ul li{
+            display: inline-block;
+            margin: 15px;
+            }
+            nav a{
+            text-decoration: none;
+            font-size: 0.8em;
+            color: black;
+            }
+            #box{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                color: white;
+                width: 1000px;
+                margin: 0 auto;
+            }
+            section{
+                width: 100%;
+                height: 700px;
+            }
+            #box img{
+                width: 300px;
+                margin-top: 40px;
+                margin-right: 33px;               
+            }
+            footer{
+                background-color: black;
+                height: 50px;
+                width: 100%;
+            }
+            footer p{
+                color: white;
+                text-align: center;
+                font-size: 0.5em;
+                line-height: 50px;
+            }
+            .border1{
+                position: relative;
+                border-radius: 50px;
+                background-color: red;
+                width: 300px;
+                height: 35px;
+                bottom: 265px;
+                font-size: 0.7em;
+                margin: 0 auto;
+                right: 18px;
+            }
+            .border1 > p{margin: 0; padding: 0; margin-top: 6px;}
+            .border2{
+                position: relative;
+                border-radius: 50px;
+                background-color: red;
+                width: 300px;
+                height: 35px;
+                font-size: 0.7em;
+                top: -33px;
+                margin: 0 auto;
+                right: 18px;
+            }
+            .border2 > p{margin: 0; padding: 0; margin-top: 6px;}
+            .border1:hover{
+                color: black;
+            }
+            .border2:hover{
+                color: black;
+            }
+            ul li a:hover{
+                color: red;
+            }
+    </style>
+</head>
+<body>
+        <div id="home">
+                <nav>
+                    <img src="logo2.png">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                <header>
+                        
+                </header>
+            <section>
+                <article class="menu">
+                    <ul>
+                        <li><a href="#">WebDesign & Programming</a></li>
+                        <li><a href="#">WebDesign</a></li>
+                        <li><a href="#">Editorial Design</a></li>
+                    </ul>
+                </article>
+                <div id="box">
+                <article class="box1"><img src="/web/2.jpg"></article>
+                <article class="box2"><img src="3.jpg"></article>
+                <article class="box3"><img src="4.jpg"></article>
+                <article class="box4"><img src="5.jpg"></article>
+                <article class="box5"><img src="6.jpg"></article>
+                <article class="box6"><img src="7.jpg"></article>
+                <article class="border1">
+                    <p>홈페이지 바로가기</p></article>
+                <article class="border1">
+                    <p>홈페이지 바로가기</p>
+                </article>
+                <article class="border1">
+                    <p>홈페이지 바로가기</p>
+                </article>
+                <article class="border2">
+                   <p>홈페이지 바로가기</p>
+                </article>
+                <article class="border2">
+                    <p>홈페이지 바로가기</p>
+                </article>
+                <article class="border2">
+                    <p>홈페이지 바로가기</p></article>
+                </div>
+                </section>
+            <footer>
+                <p>copyrightcopyrightⓒ2019CHOI HYEJI.All Rights ReservedV</p>
+            </footer>
+        </div>
+</body>
+</html>
