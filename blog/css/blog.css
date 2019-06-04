@@ -1,0 +1,108 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    width: 100%;
+}
+#header>nav{
+    width: 70%;
+    display: inline-block;
+    text-align: right;
+    box-sizing: border-box;
+}
+#header>nav ul{
+    list-style-type: none;
+}
+#header>nav li{
+    display: inline-block;
+    padding-left: 10px;
+}
+#header>nav a{
+    text-decoration: none;
+    color: black;
+}
+#header>img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+#about{
+    width: 100%;
+    margin: 200px -400px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#about img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: -250px 100px;
+    border: 1px solid black;
+}
+.menu1{
+    margin: 50px auto;
+    float: left;
+    font-size: 3em;
+    border-radius: 0px 50px 50px 0px;
+    background-color: green;
+    color: white;
+}
+.menu2{
+    margin: 100px auto;
+    float: left;
+    font-size: 3em;
+    border-radius: 0px 50px 50px 0px;
+    background-color: green;
+    color: white;
+}
+#port{
+    width: 100%;
+    margin: 200px auto;
+    text-align: center;
+}
+#background{
+    background-color: grey;
+}
+#port div{
+    padding: 0;
+    margin-bottom: 10px;
+}
+#port img{
+    margin: 300px auto;
+}
+.p1 img{
+    float: left;
+    width: 250px;
+    margin-right: 52px;
+}
+.p2 img{
+    width: 250px;
+    float: left;
+}
+.p3 img{
+    float: left;
+    
+}
+.p4 img{
+    
+}
+#contact{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    margin: 200px 100px;
+}
+#contact img{
+    margin: 20px;
+}
+.menu3{
+    margin: 50px auto;
+    float: left;
+    font-size: 3em;
+    border-radius: 0px 50px 50px 0px;
+    background-color: green;
+    color: white;
+}
