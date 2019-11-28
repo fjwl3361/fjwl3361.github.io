@@ -119,6 +119,9 @@ footer>img{
 #phone{
   width: 0;
 }
+#qr{
+  width: 0;
+}
 footer{
   background-color: grey;
   width: 360px;
