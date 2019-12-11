@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+nav a{
+    color: #000;
+}
+span{
+    font-weight: bolder;
+}
+.bolder{
+    font-weight: bolder;
+}

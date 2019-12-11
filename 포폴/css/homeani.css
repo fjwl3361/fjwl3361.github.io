@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+a { text-decoration: none; }
+ul li { list-style: none; color: #fff;}
+body{
+  /* background: #FBD4C5; */
+}
+
+@keyframes about1{
+0%{
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes about2{
+0%{
+    opacity: 0;
+}
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes about3{
+0%{
+    opacity: 0;
+}
+    100% {
+      opacity: 1;
+    }
+  }

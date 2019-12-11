@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+a { text-decoration: none; }
+ul li { list-style: none; color: #fff;}
+body{
+   /* background: #FBD4C5; */
+   background: url('../img/adventure-cold-conifers-evening-572897.jpg');
+  background-size: cover;
+}
+#wrap{
+  width: 100%;
+  position: relative;
+  /* margin: 0 auto; */
+}
+
+.about{
+  position: absolute;
+  /* left: 673px;
+  top: 450px; */
+  left: 48%;
+  top: 180px;  
+  transform: translate(-50%,-50%);
+}
+
+.about1{
+  margin: 30px;
+  animation: about1 3s ease-in-out;
+}
+.about2{
+  margin: 30px;
+  animation: about1 3s ease-in-out;
+}
+.about3{
+  margin: 30px;
+  animation: about1 3s ease-in-out;
+}
+
+.about1:hover{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.about2:hover{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.about3:hover{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 300px;
+  height: 100px;
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 350px;
+}
+
+.container h1:nth-child(1) {
+  font-family: 'Sulphur Point', sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 0 0 0 38%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 1000px;
+  animation: title 4s steps(40,end) forwards;
+}
+
+.container :nth-child(2) {
+  font-family: 'Sulphur Point', sans-serif;
+  opacity: 0;
+  color: #554a50;
+  margin: 20px auto auto auto;
+  font-size: 20px;  
+  width: 250px;
+  font-weight: bolder;
+  position: relative;
+  right: 38px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.3); ;
+  animation: name 4s steps(40,end) 2s forwards,
+   blink .5s step-end infinite alternate;
+}
+
+@keyframes name {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+  }
+  100% {
+    background-position: 300px 0;
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Border X get width  */
+.border a:before, .border a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.border a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.border a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.border a:hover:before, .border a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+.list a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    left: 670px;
+    top: 40px;
+}

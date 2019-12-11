@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+body,div,a,h1,h2,h3,h4,h5,h6{margin: 0; padding: 0; font-family: 'Noto Serif KR', serif;
+}
+*{  margin: 0 auto; padding: 0; font-family: 'Ubuntu', sans-serif;}
+a { text-decoration: none;}
+img{ border:0; }
+h1 { font-size: 35px;}
+ul li { text-decoration: none; list-style-type: none;}
+
+.clearfix:before,
+.clearfix:after{content: ''; display: block; clear: both;}
+
+#wrap{
+    width: 100%;
+    /* background-color: #000; */
+}
+.back-img{
+    /* background:  */
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    height: 95vh;
+    /* background-color: coral; */
+    text-align: right;
+    font-size: 30px;
+}
+header p{
+    display: inline-block;
+    margin-top: 300px;
+    font-size: 2em;
+    color: #fff;
+}
+header span{
+    color: #fff;
+    font-size: 30px;
+}
+/* 네비메뉴 */
+nav{
+    text-align: right;
+    height: 50px;
+}
+nav a{
+    padding: 20px 0px 10px 13px;
+    color: #fff;
+    line-height: 50px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color: #8080c0;
+}
+
+/* 어바웃 */
+#about{
+    height: 100vh;
+}
+#about img{
+    margin: 0 0 0 690px;
+}
+
+#about h1{
+    text-align: center;
+    padding: 80px 0 60px 0;
+    color: #fff;
+}
+.til{
+    background:url('../img/adventure-cold-conifers-evening-572897.jpg');
+    background-size: cover;
+    height: 200px;
+    animation: til 8s ease-in-out infinite;
+}
+@keyframes til{
+0%{
+    background-position: center -100px;
+}
+40%{
+    background-position: center  -500px;
+}
+70%{
+    background-position: center -500px;
+}
+100%{
+    background-position: center -100px;
+}
+}
+#about h2{
+    padding: 60px 0 40px;
+    text-align: center;
+    color: #000;
+    font-size: 30px; font-weight: bolder;
+
+}
+#about p{
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+}
+#about h3{
+    text-align: center;
+}
+
+
+
+/* 포트폴리오 */
+#portfolio{
+    /* width: 100%;     */
+    height: 150vh;
+    /* background-color: #5f97eb; */
+}
+#portfolio h1{
+    text-align: center;
+    padding: 80px 0 60px 0;
+    color: #fff;
+}
+#title ul li{
+    display: inline-block;
+    margin: 10px;
+}
+#title ul{
+    margin: 50px 0 0 500px;
+}
+#title ul li a{
+    color: #000;
+}
+.port-layout{
+    /* background-color: #fff; */
+    width: 50%;
+    height: 900px;
+    box-sizing: border-box;
+    position: relative;
+    top: 50px;
+    left:25px;
+    margin: 0 auto;
+    /* display: block; */
+}
+.box{ 
+    width: 30%; 
+    height: 30%; 
+    float: left;
+    margin: 10px;
+    /* background: red; */
+}
+.box h3{
+    text-align: center;
+    padding: 100px 0 10px 0;
+    color: #fff;
+}
+.box p{
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+.box .port_text{
+    width: 260px;
+    height: 246px;
+     position: relative;
+     top: -258px;
+     left: 13px;
+     opacity: 0;
+}
+
+.box img{
+    display: block;
+    position: relative;
+    width: 286px;
+    height: 270px;
+    /* z-index: 1; */
+}
+.box:hover .port_text{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: burlywood; */
+    opacity: 1;
+    transform: scale(1.1); 
+    transition: all 0.5s;
+}
+#contact{
+    height: 95vh;
+}
+#contact h1{
+    /* font-family: 'Sulphur Point', sans-serif; */
+    text-align: center;
+    color: #fff;
+    padding: 80px 0 60px 0;
+}
+.email{
+    width: 800px;
+    padding: 4% 0 0;
+    margin: auto;
+}
+.form {
+    background: #FFFFFF;
+    max-width: 600px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  }
+  .form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #8080ff;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .form button:hover{
+    background: #8080c0;
+  }
+  .form p{
+      float: left;
+      text-align: center;
+      margin: 10px;
+  }
+  textarea{
+      resize: none;
+  }
+.sns { position:absolute; top:830px; right:810px;}
+/* 컨테이너 */
+.container{
+    width: 1200px;
+    /* background: rgba(255,255,255,0.3); */
+    margin: 0 auto;
+    height: inherit;
+}
+/*레이어팝업*/
+.popup_main1,.popup_main2,.popup_main3,.popup_main4,.popup_main5,.popup_main6
+,.popup_main7,.popup_main8,.popup_main9{
+    display: none;
+    position: fixed;
+    right: 430px;
+    top: 30px;
+    background: rgba(8, 8, 8, 0.3);
+    border: 1px solid #000;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    overflow: scroll;
+    overflow-x: hidden;
+    width:1000px;
+	height:800px;
+}
+.popup_main1 img,.popup_main2 img,.popup_main3 img,.popup_main4 img,.popup_main5 img
+,.popup_main6 img,.popup_main7 img,.popup_main8 img,.popup_main9 img{
+    width: 100%;
+    display: block;
+}
+.close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9{ 
+    position: fixed;
+    left: 1390px;
+    top: 50px;
+/*    background: #0093bd;*/
+    padding: 1px 6px;
+    color: #fff;
+    width: 30px;
+}
+ .visivle{
+     display: block;
+
+ }
+
